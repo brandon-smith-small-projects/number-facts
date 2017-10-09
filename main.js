@@ -34,6 +34,8 @@ function getFactFetch() {
             if (number != '') {
                 fact.style.display = 'block';
                 factText.innerText = data;
+            } else {
+                fact.style.display = 'none';
             }
         })
         .catch(err => console.log(err));
