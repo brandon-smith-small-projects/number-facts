@@ -34,7 +34,7 @@ function getFactFetch() {
             if (number != '') {
                 fact.style.display = 'block';
                 factText.innerText = data;
-            } else {
+            } else if (number.length == 0){
                 fact.style.display = 'none';
             }
         })
