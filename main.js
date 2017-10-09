@@ -25,7 +25,7 @@ numberInput.addEventListener('input', getFactFetch);
 
 function getFactFetch() {
     let number = numberInput.value;
-    let url = `http://numbersapi.com/${number}`
+    let url = `https://cors-anywhere.herokuapp.com/http://numbersapi.com/${number}`
 
     fetch(url)
         .then(response => response.text())
